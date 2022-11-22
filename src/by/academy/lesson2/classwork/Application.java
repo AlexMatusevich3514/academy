@@ -19,5 +19,7 @@ public class Application {
         System.out.println("Было денег " + cat2.getMoney());
         cat2.buy();
         System.out.println("Стало денег " + cat2.getMoney());
+
+        System.out.println("файл измененный");
     }
 }
