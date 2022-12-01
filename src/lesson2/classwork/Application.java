@@ -1,5 +1,7 @@
 package lesson2.classwork;
 
+import by.academy.lesson2.classwork.Cat;
+
 public class Application {
     public static void main(String[] args) {
         Cat cat1 = new Cat();

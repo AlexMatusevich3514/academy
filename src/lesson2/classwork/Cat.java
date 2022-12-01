@@ -1,56 +1,50 @@
-package lesson2.classwork;
+package by.academy.lesson2.classwork;
 
 public class Cat {
-    private int age;
-    private String nickname;
-    private int money;
-    private char initials;
-    private boolean isHomeAnimal;
+    public int age;
+    public String nickname;
+    public double money;
+    public char initials;
+    boolean isHomeAnimal;
 
     public Cat() {
+        super();
     }
 
     public Cat(String nickname) {
         this.nickname = nickname;
     }
 
-    public void setHomeAnimal(boolean homeAnimal) {
-        isHomeAnimal = homeAnimal;
-    }
-
     public boolean isHomeAnimal() {
         return isHomeAnimal;
     }
 
+    public void setHomeAnimal(boolean homeAnimal) {
+        isHomeAnimal = homeAnimal;
+    }
+
     public char getInitials() {
-        if (nickname == null)
-            return 33;
-        else
-            return nickname.charAt(0);
+        return initials;
     }
 
-    public void setInitials(String nickname) {
-        this.initials = nickname.charAt(0);
+    public void setInitials(char initials) {
+        this.initials = initials;
     }
 
-    public int getMoney() {
+    public double getMoney() {
         return money;
     }
 
-    public void setMoney(int money) {
+    public void setMoney(double money) {
         this.money = money;
+    }
+
+    public void buy(){
+        money-=10;
     }
 
     public int getAge() {
         return age;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public String getNickname() {
-        return nickname;
     }
 
     public void grow() {
@@ -69,5 +63,6 @@ public class Cat {
         System.out.println("Кот гуляет");
     }
 
-
+    public void setNickname(String barsik) {
+    }
 }
