@@ -1,4 +1,4 @@
-package by.academy.lesson2.classwork;
+package homework1;
 
 public class Cat {
     public int age;
@@ -39,8 +39,8 @@ public class Cat {
         this.money = money;
     }
 
-    public void buy(){
-        money-=10;
+    public void buy() {
+        money -= 10;
     }
 
     public int getAge() {
@@ -63,6 +63,10 @@ public class Cat {
         System.out.println("Кот гуляет");
     }
 
-    public void setNickname(String barsik) {
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 }
+
+
+

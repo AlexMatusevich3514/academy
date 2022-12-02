@@ -1,4 +1,4 @@
-package lesson4.classwork;
+package by.academy.classwork;
 
 public class ArraySort {
     public static void main(String[] args) {

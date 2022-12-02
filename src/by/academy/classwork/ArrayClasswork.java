@@ -1,7 +1,6 @@
-package lesson4.classwork;
+package by.academy.classwork;
 
 import java.util.Arrays;
-import java.lang.reflect.Array;
 import java.util.Random;
 
 public class ArrayClasswork {
