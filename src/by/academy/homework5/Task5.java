@@ -14,16 +14,12 @@ public class Task5 {
 
         System.out.println("Введите текст:");
         String text = scanner.nextLine();
-
-        int[] symbol = new int[65536];
-        for (int i = 0; i < text.length(); i++) {
-            int a = symbol[text.charAt(i)];
-            symbol[text.charAt(i)] = a + 1;
-        }
-
-        for (int i = 0; i < 65536; i++) {
-            if (symbol[i] > 0) {
-                map.put((char) i, symbol[i]);
+        char[] chars = text.toCharArray();
+        for (char c : chars) {
+            if (map.containsKey(c)) {
+                map.put(c, map.get(c) + 1);
+            } else {
+                map.put(c, 1);
             }
         }
 
